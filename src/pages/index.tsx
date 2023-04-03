@@ -12,7 +12,6 @@ export default function Home() {
     return 33;
   }
   return (
-    <>
       <Head>
         <title>Create          Next App</title>
 
