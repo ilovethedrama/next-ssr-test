@@ -7,7 +7,7 @@ export default function DoRaeMi() {
   const [stuff, newStuff] = useState();
 
   function DeerBaby(): number {
-    return 3;
+    return 35;
   }
   return <button onClick={() => DeerBaby()}>{stuff}</button>;
 }
