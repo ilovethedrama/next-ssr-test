@@ -4,10 +4,10 @@ import React, { useState } from 'react';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function DoRaeMi() {
-  const [stuff, newStuff] = useState();
+  const [stuff, setNewStuff] = useState(0);
 
-  function DeerBaby(): number {
-    return 35;
+  function DeerBaby() {
+    return setNewStuff(35);
   }
   return <button onClick={() => DeerBaby()}>{stuff}</button>;
 }
