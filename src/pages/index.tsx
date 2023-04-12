@@ -1,3 +1,4 @@
+import ReferralForm from '@/components/referral-form';
 import { Inter } from 'next/font/google';
 import React from 'react';
 
@@ -7,5 +8,5 @@ export default function Home() {
   function doRaeMi(): number {
     return 33;
   }
-  return <p>hi</p>;
+  return <ReferralForm />;
 }

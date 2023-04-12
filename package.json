@@ -11,6 +11,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
     "@types/node": "18.15.11",
     "@types/react": "18.0.33",
     "@types/react-dom": "18.0.11",
@@ -19,8 +20,10 @@
     "git-commit-msg-linter": "^4.9.4",
     "next": "13.2.4",
     "react": "18.2.0",
+    "react-calendar": "^4.2.1",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.43.9",
+    "sass": "^1.60.0",
     "typescript": "5.0.3"
   },
   "devDependencies": {
