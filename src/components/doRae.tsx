@@ -7,7 +7,7 @@ export default function DoRaeMi() {
   const [stuff, setNewStuff] = useState(0);
 
   function DeerBaby() {
-    return setNewStuff(35);
+    return setNewStuff(357);
   }
   return <button onClick={() => DeerBaby()}>{stuff}</button>;
 }
