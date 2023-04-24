@@ -15,10 +15,11 @@ export default function Radio({
 
   return (
     <div onChange={onChangeHandler} className={styles.container}>
-      <label className={styles.label}>{labelText}:</label>
+      <label className={styles.label}>{labelText}</label>
       <input
         type="radio"
-        value="yes"
+        id={`radio-option-${labelText}`}
+        value={labelText}
         className={styles.radio}
         {...register(labelType)}
       />
