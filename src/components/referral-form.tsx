@@ -24,13 +24,36 @@ type IReferralFormInput = {
 };
 export default function ReferralForm() {
   const { register, handleSubmit } = useForm<IReferralFormInput>();
+
+  const handleLeSubmit = async (data: IReferralFormInput) => {
+    console.log(
+      JSON.stringify({
+        ...data,
+      }),
+    );
+
+    try {
+      let response = await fetch('http://localhost:3000/api/postForm', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+          Accept: 'application/json, text/plain, */*',
+          'Content-Type': 'application/json',
+        },
+      });
+      response = await response.json();
+    } catch (errorMessage: any) {
+      console.log(errorMessage);
+    }
+  };
+
   const onSubmit: SubmitHandler<IReferralFormInput> = data => {
-    console.log(data);
-    // console.log(dateOfBirth);
+    handleLeSubmit(data);
   };
 
   return (
     <>
+      <h1>KEE Youth UK Referral Form</h1>
       <h2>Details of young person</h2>
       <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
         <Input
