@@ -1,0 +1,27 @@
+{
+    "name": "addReferral",
+    "type": "DATABASE",
+    "config": {
+        "operation_types": [
+            "INSERT"
+        ],
+        "database": "KYUK_Operations",
+        "collection": "referrals",
+        "service_name": "KYUKDB",
+        "match": {},
+        "project": {},
+        "full_document": true,
+        "full_document_before_change": false,
+        "unordered": true,
+        "skip_catchup_events": false,
+        "tolerate_resume_errors": false
+    },
+    "disabled": false,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "Atlas_Triggers_addReferral_1682541881"
+            }
+        }
+    }
+}

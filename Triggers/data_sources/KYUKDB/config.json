@@ -1,0 +1,10 @@
+{
+    "name": "KYUKDB",
+    "type": "mongodb-atlas",
+    "config": {
+        "clusterName": "KYUKDB",
+        "readPreference": "primary",
+        "wireProtocolEnabled": false
+    },
+    "version": 1
+}
